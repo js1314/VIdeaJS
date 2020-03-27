@@ -1,0 +1,102 @@
+/*
+Document	: vi.ui
+Created		: 2016-6-6
+Author		: yonglong_zhu
+Description	: Purpose of the stylesheet follows.
+*/
+
+*{margin:0;padding:0}
+/**,*::after,::before{box-sizing:border-box}*/
+html{background-color:#fff}
+body{background-color:#fff;color:#000;font-family:"Microsoft Yahei","Arial","sans-serif";font-size:14px;line-height:1.42857;padding-top:0.01px}
+a{color:#000;text-decoration:none}
+a:hover{text-decoration:none}
+ol,ul{list-style:none}
+img,input{vertical-align:middle}
+button::-moz-focus-inner,input::-moz-focus-inner,textarea::-moz-focus-inner{border:0 none;padding:0}
+textarea{resize:none}
+fieldset{margin:0 2px;padding:15px;border:1px solid #ccc;border-radius:4px}
+legend{border:0 none;font-weight:700;font-size:16px;padding:0 3px}
+.vi-red{color:#cd0104}
+.vi-closed,.vi-hidden{display:none}
+.vi-unselectable{-moz-user-select:none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none}
+.vi-row,.vi-row-1,.vi-row-2,.vi-row-3,.vi-row-4,.vi-row-5,.vi-row-6,.vi-row-7,.vi-row-8,.vi-row-9,.vi-row-a{clear:both;display:table;margin-bottom:15px}
+.vi-col,.vi-col-1,.vi-col-2,.vi-col-3,.vi-col-4,.vi-col-5,.vi-col-6,.vi-col-7,.vi-col-8,.vi-col-9,.vi-col-a{float:left;padding:0 15px}
+.vi-row,.vi-col{width:100%}
+.vi-row-a,.vi-col-a{width:auto}
+.vi-row-1,.vi-col-1{width:10%}
+.vi-row-2,.vi-col-2{width:20%}
+.vi-row-3,.vi-col-3{width:30%}
+.vi-row-4,.vi-col-4{width:40%}
+.vi-row-5,.vi-col-5{width:50%}
+.vi-row-6,.vi-col-6{width:60%}
+.vi-row-7,.vi-col-7{width:70%}
+.vi-row-8,.vi-col-8{width:80%}
+.vi-row-9,.vi-col-9{width:90%}
+.vi-col-p,.vi-col-p1,.vi-col-p2,.vi-col-p3,.vi-col-p4,.vi-col-p5,.vi-col-p6,.vi-col-p7,.vi-col-p8,.vi-col-p9,.vi-col-pa{float:left;padding:0 15px!important}
+.vi-col-p{width:100%!important}
+.vi-col-pa{width:auto!important}
+.vi-col-p1{width:10%!important}
+.vi-col-p2{width:20%!important}
+.vi-col-p3{width:30%!important}
+.vi-col-p4{width:40%!important}
+.vi-col-p5{width:50%!important}
+.vi-col-p6{width:60%!important}
+.vi-col-p7{width:70%!important}
+.vi-col-p8{width:80%!important}
+.vi-col-p9{width:90%!important}
+.vi-col-s,.vi-col-s1,.vi-col-s2,.vi-col-s3,.vi-col-s4,.vi-col-s5,.vi-col-s6,.vi-col-s7,.vi-col-s8,.vi-col-s9,.vi-col-sa{float:left;box-sizing:content-box}
+.vi-col-s{margin-left:100%}
+.vi-col-sa{margin-left:auto}
+.vi-col-s1{margin-left:10%}
+.vi-col-s2{margin-left:20%}
+.vi-col-s3{margin-left:30%}
+.vi-col-s4{margin-left:40%}
+.vi-col-s5{margin-left:50%}
+.vi-col-s6{margin-left:60%}
+.vi-col-s7{margin-left:70%}
+.vi-col-s8{margin-left:80%}
+.vi-col-s9{margin-left:90%}
+.vi-input{width:100%;height:34px;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,.075) inset;color:#555;display:block;font-size:14px;line-height:1.42857;padding:6px 12px;transition:border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s}
+select.vi-input{width:auto}
+textarea.vi-input{height:136px}
+.vi-input.vi-success{border-color:#ccc;color:#555}
+.vi-input.vi-success:focus,.vi-input:focus{border-color:#66afe9;box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(102,175,233,.6);outline:0 none}
+.vi-label{float:left;padding:7px 0;text-align:right;font-weight:700}
+.vi-checkbox,.vi-radio{float:left;background-color:#fff;background-image:none;color:#555;font-size:14px;line-height:1.42857;padding:6px 12px}
+.vi-checkbox input,.vi-radio input{float:left;margin-top:4px;vertical-align:middle}
+.vi-checkbox label,.vi-radio label{float:left;padding:0 0 0 5px;text-align:right;font-weight:400}
+.vi-success{border-color:#3e8f3e;color:#3e8f3e}
+.vi-success:focus{border-color:#3e8f3e;box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(62,143,62,.6);outline:0 none}
+.vi-warning{border-color:#b92c28;color:#b92c28}
+.vi-warning:focus{border-color:#b92c28;box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(185,44,40,.6);outline:0 none}
+.vi-button,.vi-button-danger,.vi-button-default,.vi-button-info,.vi-button-main,.vi-button-success,.vi-button-warning{-moz-user-select:none;background-image:none;border:1px solid transparent;border-radius:4px;cursor:pointer;display:inline-block;font-size:14px;font-weight:400;color:#fff;line-height:1.42857;margin-bottom:0;padding:6px 12px;text-align:center;vertical-align:middle;white-space:nowrap;box-shadow:0 1px 0 rgba(255,255,255,.15) inset,0 1px 1px rgba(0,0,0,.075);text-shadow:0 -1px 0 rgba(0,0,0,.2)}
+.vi-button{background-color:#e0e0e0;background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);background-repeat:repeat-x;border-color:#ccc;color:#000;text-shadow:0 1px 0 #fff}
+.vi-button:focus,.vi-button:hover{background-color:#e0e0e0;background-position:0 -15px}
+.vi-button.active,.vi-button:active{background-color:#e0e0e0;background-image:none;border-color:#dbdbdb;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button.disabled,.vi-button:disabled,.vi-button[disabled]{background-color:#e0e0e0;background-image:none}
+.vi-button-default{background-color:#fff;border-color:#ccc;color:#000;text-shadow:0 1px 0 #fff}
+.vi-button-default:focus,.vi-button-default:hover{background-color:#e0e0e0;background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);background-repeat:repeat-x}
+.vi-button-default.active,.vi-button-default:active{background-color:#e0e0e0;background-image:none;border-color:#dbdbdb;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-default.disabled,.vi-button-default:disabled,.vi-button-default[disabled]{background-color:#e0e0e0;background-image:none}
+.vi-button-main{background-color:#265a88;background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);background-repeat:repeat-x;border-color:#245580}
+.vi-button-main:focus,.vi-button-main:hover{background-color:#265a88;background-position:0 -15px}
+.vi-button-main.active,.vi-button-main:active{background-color:#265a88;border-color:#245580;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-main.disabled,.vi-button-main:disabled,.vi-button-main[disabled]{background-color:#265a88;background-image:none}
+.vi-button-success{background-color:#419641;background-image:linear-gradient(to bottom,#5cb85c 0,#419641 100%);background-repeat:repeat-x;border-color:#3e8f3e}
+.vi-button-success:focus,.vi-button-success:hover{background-color:#419641;background-position:0 -15px}
+.vi-button-success.active,.vi-button-success:active{background-color:#419641;border-color:#3e8f3e;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-success.disabled,.vi-button-success:disabled,.vi-button-success[disabled]{background-color:#419641;background-image:none}
+.vi-button-info{background-color:#2aabd2;background-image:linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);background-repeat:repeat-x;border-color:#28a4c9}
+.vi-button-info:focus,.vi-button-info:hover{background-color:#2aabd2;background-position:0 -15px}
+.vi-button-info.active,.vi-button-info:active{background-color:#2aabd2;border-color:#28a4c9;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-info.disabled,.vi-button-info:disabled,.vi-button-info[disabled]{background-color:#2aabd2;background-image:none}
+.vi-button-warning{background-color:#eb9316;background-image:linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);background-repeat:repeat-x;border-color:#e38d13}
+.vi-button-warning:focus,.vi-button-warning:hover{background-color:#eb9316;background-position:0 -15px}
+.vi-button-warning.active,.vi-button-warning:active{background-color:#eb9316;border-color:#e38d13;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-warning.disabled,.vi-button-warning:disabled,.vi-button-warning[disabled]{background-color:#eb9316;background-image:none}
+.vi-button-danger{background-color:#c12e2a;background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);background-repeat:repeat-x;border-color:#b92c28}
+.vi-button-danger:focus,.vi-button-danger:hover{background-color:#c12e2a;background-position:0 -15px}
+.vi-button-danger.active,.vi-button-danger:active{background-color:#c12e2a;border-color:#b92c28;box-shadow:0 3px 5px rgba(0,0,0,.125) inset}
+.vi-button-danger.disabled,.vi-button-danger:disabled,.vi-button-danger[disabled]{background-color:#c12e2a;background-image:none}
+

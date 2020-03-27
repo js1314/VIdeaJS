@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.UI.Animate.prototype.reset Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+	</head>
+	<body>
+		<div class="vi-ui-draggable" vi-handler="#handler" vi-reset="1000" vi-wrapper="window" style="
+			 position: absolute ;
+			 top: 10px;
+			 left: 20px;
+			 width: 150px; 
+			 height: 100px;
+			 margin: 210px 90px 70px 50px; 
+			 border: black 3px solid; 
+			 border-top-width: 8px; 
+			 border-top-width: 13px; 
+			 border-right-width: 18px;">
+
+			<div id="handler" style="
+				 width: 148px; 
+				 height: 28px;
+				 border: blue 1px solid;">
+				Handler 
+			</div>
+
+			draggable 
+		</div>
+
+		<div id="x"></div>
+		<div id="y"></div>
+
+		<script type="text/javascript">
+			for (var i = 0; i < 100; i++) {
+				document.write("<br />");
+			}
+			window.scrollTo(0, 100);
+		</script>
+	</body>
+</html>

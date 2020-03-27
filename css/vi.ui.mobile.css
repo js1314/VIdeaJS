@@ -1,0 +1,29 @@
+/* 
+Document	: vi.ui.mobile
+Created		: 2016-6-6 
+Author		: yonglong_zhu
+Description	: Purpose of the stylesheet follows.
+*/
+
+.vi-dialog-header{height:40px;line-height:40px}
+.vi-alert-header{height:40px;line-height:40px}
+.vi-confirm-header{height:40px;line-height:40px}
+
+.vi-dialog-title{font-size:20px;height:40px;line-height:40px}
+.vi-alert-title{font-size:20px;height:40px;line-height:40px}
+.vi-confirm-title{font-size:20px;height:40px;line-height:40px}
+
+.vi-dialog-close{width:40px;height:40px;line-height:40px}
+.vi-alert-close{width:40px;height:40px;line-height:40px}
+.vi-confirm-close{width:40px;height:40px;line-height:40px}
+
+.vi-dialog-body{min-height:40px;font-size:20px}
+.vi-alert-body{min-height:40px;font-size:20px}
+.vi-confirm-body{min-height:40px;font-size:20px}
+
+.vi-dialog-container{padding:6px}
+.vi-alert-container{padding:6px}
+.vi-confirm-container{padding:6px}
+
+.vi-input{height:40px;font-size:20px}
+.vi-button,.vi-button-danger,.vi-button-default,.vi-button-info,.vi-button-main,.vi-button-success,.vi-button-warning{font-size:20px;padding:8px 14px}

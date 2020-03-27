@@ -1,0 +1,8 @@
+#left { float: left; width: 20%; height: 100%; }
+#left h2 { text-indent: 1em; height: 30px; line-height: 30px; font-size: 18px; }
+#left h3 { text-indent: 1em; height: 30px; line-height: 30px; font-size: 16px; }
+#left p { text-indent: 2em; height: 30px; line-height: 30px; font-size: 14px; border-bottom: #ccc 1px solid; }
+#left a { display: block; }
+#left .active { font-weight: bold; background-color: red; color: #fff; }
+#right { float: left; width: 80%; height: 100%; border-left: #ccc 1px solid; margin-left: -1px; }
+#right iframe { width: 100%; height: 100%; border: none; }

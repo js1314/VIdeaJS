@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.UI.Form Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+	</head>
+	<body>
+		<iframe name="iframe"></iframe>
+		<form class="vi-ui-Form" method="post" class="vi-form" target="iframe">
+			<input type="hidden" name="hidden" value="1" />
+			<fieldset>
+				<legend>form</legend>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">required</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="required" value="" vi-expr="required" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">num</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="num" value="" vi-expr="num" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">int</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="int" value="" vi-expr="int" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">float</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="float" value="" vi-expr="float" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">range</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="range" value="" vi-expr="range|-255~255" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">alnum</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="alnum" value="" vi-expr="alnum" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">mobile</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="mobile" value="" vi-expr="mobile" />
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">select</label>
+					<div class="vi-col-2">
+						<select name="select" class="vi-input" vi-expr="required">
+							<option value="">select</option>
+							<option value="1">option 1</option>
+							<option value="2">option 2</option>
+							<option value="3">option 3</option>
+							<option value="4">option 4</option>
+						</select>
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">radio</label>
+					<div class="vi-col-2">
+						<div class="vi-radio">
+							<input type="radio" name="radio" id="radio1" value="1" vi-expr="included" />
+							<label for="radio1">radio 1</label>
+						</div>
+						<div class="vi-radio">
+							<input type="radio" name="radio" id="radio2" value="2" vi-expr="included" />
+							<label for="radio2">radio 2</label>
+						</div>
+					</div>
+				</div>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">checkbox</label>
+					<div class="vi-col-2">
+						<div class="vi-checkbox">
+							<input type="checkbox" name="checkbox[]" id="checkbox1" value="1" vi-expr="included" />
+							<label for="checkbox1">checkbox 1</label>
+						</div>
+						<div class="vi-checkbox">
+							<input type="checkbox" name="checkbox[]" id="checkbox2" value="2" vi-expr="included" />
+							<label for="checkbox2">checkbox 2</label>
+						</div>
+						<div class="vi-checkbox">
+							<input type="checkbox" name="checkbox[]" id="checkbox3" value="3" vi-expr="included" />
+							<label for="checkbox3">checkbox 3</label>
+						</div>
+					</div>
+				</div>
+				<div class="vi-row">
+					<div class="vi-col-s1 vi-col-a">
+						<button type="submit" class="vi-button-main">提交</button>
+					</div>
+					<div class="vi-col-a">
+						<button type="reset" class="vi-button">重置</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

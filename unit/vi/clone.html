@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.clone Test</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			var source = {
+				a: {
+					b: 1
+				}
+			};
+			var clone = vi.clone(source);
+			clone.a.b = 2;
+			console.dir(source);
+			console.dir(clone);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,368 @@
+/*
+Document	: vi.ui
+Created		: 2016-6-6
+Author		: yonglong_zhu
+Description	: Purpose of the stylesheet follows.
+*/
+
+.vi-template-body{display:none}
+.vi-paginator{clear:both;overflow:hidden;padding:10px}
+.vi-paginator-body{display:inline-block;height:24px;text-align:right;line-height:24px}
+.vi-paginator-body li{display:inline-block;margin-right:10px}
+.vi-paginator-body li a{display:inline-block;padding:3px 10px;outline:0 none;border:1px solid #ccc;border-radius:4px;background-color:#e0e0e0;background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);background-repeat:repeat-x;box-shadow:0 1px 0 rgba(255,255,255,.15) inset,0 1px 1px rgba(0,0,0,.075);color:#000;vertical-align:middle;text-align:center;text-decoration:none;white-space:nowrap;font-weight:400;font-size:14px;line-height:1.42857;cursor:pointer}
+.vi-paginator-body .active a,.vi-paginator-body li a:hover{border:1px solid transparent;background-color:#2e6da4;background-image:linear-gradient(to bottom,#337ab7 0,#2e6da4 100%);background-repeat:repeat-x;color:#fff}
+.vi-paginator-header{display:inline-block;margin-right:10px;height:24px;line-height:24px}
+.vi-scrolldata{float:left;margin:0 auto}
+.vi-scrolldata-body{position:relative;z-index:10;width:960px}
+.vi-scrolldata-loading,.vi-scrolldata-more,.vi-scrolldata .vi-paginator{position:relative;z-index:11;float:left;margin:10px 0;padding:10px;width:930px;border:#FDA316 1px solid;border-radius:3px;color:#FDA316;text-align:center;font-size:16px;line-height:24px}
+.vi-scrolldata-more{cursor:pointer}
+.vi-scrolldata-more,.vi-scrolldata .vi-paginator{display:none}
+.vi-scrolldata-module{float:left;margin:-1px 0 0 -1px;padding:10px;width:208px;height:280px;border:#EAEAEA 1px solid}
+.vi-scrolldata-module:hover{position:relative;z-index:10;border-color:#FDA316}
+.vi-scrolldata-module ul{float:left;overflow:hidden;width:208px}
+.vi-scrolldata-module:hover ul{position:relative;z-index:20;border-color:#FDA316}
+.vi-scrolldata-module li{clear:both;line-height:22px}
+.vi-mask{position:absolute;top:0;left:0;z-index:1000;display:none;width:100%;height:100%;background-color:#000;opacity:.4;filter:alpha(opacity=40)}
+.vi-divider{display:none}
+.vi-dialog{position:fixed;top:0;left:0;z-index:1001;display:none;background:0 0;font-size:14px}
+.vi-dialog-inner{position:relative;padding:4px;outline:0 none;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:4px;background-color:#fff;background-clip:padding-box;box-shadow:0 3px 9px rgba(0,0,0,.5)}
+.vi-dialog-header{position:relative;height:35px;border-radius:4px;background-color:#265a88;background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);background-repeat:repeat-x;line-height:35px}
+.vi-dialog-title{position:absolute;top:0;left:0;z-index:100;width:100%;height:35px;color:#fff;text-indent:10px;font-size:14px;line-height:35px}
+.vi-dialog-close{position:absolute;top:0;right:0;z-index:101;width:35px;height:35px;border-radius:4px;line-height:35px}
+.vi-dialog-close span{color:#fff;padding:10px}
+.vi-dialog-close:hover span{color:#ccc}
+.vi-dialog-body{padding:15px;line-height:22px}
+.vi-dialog-footer{padding:0px 10px 10px 10px;background-color:#fff;text-align:right}
+.vi-dialog-footer button{margin-right:6px}
+.vi-confirm{position:fixed;top:0;left:0;z-index:1001;display:none;background:0 0;font-size:14px}
+.vi-confirm-inner{position:relative;padding:4px;outline:0 none;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:4px;background-color:#fff;background-clip:padding-box;box-shadow:0 3px 9px rgba(0,0,0,.5)}
+.vi-confirm-header{position:relative;height:35px;border-radius:4px;background-color:#265a88;background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);background-repeat:repeat-x;line-height:35px}
+.vi-confirm-title{position:absolute;top:0;left:0;z-index:100;width:100%;height:35px;color:#fff;text-indent:10px;font-size:14px;line-height:35px}
+.vi-confirm-close{position:absolute;top:0;right:0;z-index:101;width:35px;height:35px;border-radius:4px;line-height:35px}
+.vi-confirm-close span{color:#fff;padding:10px}
+.vi-confirm-close:hover span{color:#ccc}
+.vi-confirm-body{padding:15px;line-height:22px}
+.vi-confirm-footer{padding:0px 10px 10px 10px;background-color:#fff;text-align:right}
+.vi-confirm-footer .vi-button-main{margin-left:6px}
+.vi-alert{position:fixed;top:0;left:0;z-index:1001;display:none;background:0 0;font-size:14px}
+.vi-alert-inner{position:relative;padding:4px;outline:0 none;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:4px;background-color:#fff;background-clip:padding-box;box-shadow:0 3px 9px rgba(0,0,0,.5)}
+.vi-alert-header{position:relative;height:35px;border-radius:4px;background-color:#265a88;background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%);background-repeat:repeat-x;line-height:35px}
+.vi-alert-title{position:absolute;top:0;left:0;z-index:100;width:100%;height:35px;color:#fff;text-indent:10px;font-size:14px;line-height:35px}
+.vi-alert-close{position:absolute;top:0;right:0;z-index:101;width:35px;height:35px;border-radius:4px;line-height:35px}
+.vi-alert-close span{color:#fff;padding:10px}
+.vi-alert-close:hover span{color:#ccc}
+.vi-alert-body{padding:15px;line-height:22px}
+.vi-alert-footer{padding:0px 10px 10px 10px;background-color:#fff;text-align:right}
+.vi-alert-footer .vi-button-main{margin-left:6px}
+.vi-tabs{float:left;min-height:200px}
+.vi-tabs-header{position:relative;height:35px;line-height:35px;border:transparent 1px solid;border-bottom:none;border-top-right-radius:4px;border-top-left-radius:4px;background-color:#fff}
+.vi-tabs-title{margin:0 15px}
+.vi-tabs-close{position:absolute;right:1px;top:0px}
+.vi-tabs-close span{visibility:hidden;color:#e0e0e0}
+.vi-tabs-close:hover span{visibility:visible;color:#ccc}
+.vi-tabs-divider{display:none;position:absolute;bottom:-1px;z-index:101;width:100%;height:2px;background-color:#fff}
+.vi-tabs-body{display:none;position:absolute;top:35px;left:0;z-index:100;clear:both;padding:15px;min-width:300px;border:transparent 1px solid;border-radius:4px;background-color:#fff}
+.vi-tabs-tab{}
+.vi-tabs.vi-active .vi-tabs-header{border:#ccc 1px solid;border-bottom:none}
+.vi-tabs.vi-active .vi-tabs-title{color:#2e6da4}
+.vi-tabs.vi-active .vi-tabs-body{display:block;border:#ccc 1px solid}
+.vi-tabs.vi-active .vi-tabs-divider{display:block}
+.vi-draggable-running .vi-tabs-header{border:#ccc 1px solid;border-bottom:none}
+.vi-draggable-running .vi-tabs-body{display:block;border:#ccc 1px solid;border-top-right-radius:0px;border-top-left-radius:0px;position:static}
+.vi-draggable{}
+.vi-draggable-series{}
+.vi-draggable-wrapper{}
+.vi-draggable-container{}
+.vi-draggable-handler{cursor:move}
+.vi-draggable-running{position:fixed;z-index:1001}
+.vi-draggable-inner{overflow:hidden}
+.vi-draggable-clone{position:fixed;z-index:1001}
+.vi-draggable-container .vi-draggable-running{position:absolute!important}
+.vi-form{padding-top:15px}
+.vi-validate{float:left;padding:7px 15px;border:none;text-align:left}
+.vi-validate .glyphicon{font-size:12px}
+.vi-menu{position:relative;float:left}
+.vi-menu-header{display:block;margin:10px 0 0;padding:3px 15px;color:#999;white-space:nowrap;font-weight:700;font-size:16px}
+.vi-menu-header~.vi-menu>.vi-menu-handler{text-indent:5px}
+.vi-menu-divider{overflow:hidden;margin:7px 15px;height:1px;background-color:#e5e5e5}
+.vi-menu-handler .glyphicon{font-size:10px}
+.vi-menu-handler .glyphicon-triangle-top{top:0}
+.vi-menu-body{position:absolute;top:100%;left:0;z-index:1000;display:none;margin:2px 0 0 0;padding:10px 0;min-width:160px;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;background-color:#fff;background-clip:padding-box;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);list-style:none;text-align:left;font-size:14px;-webkit-background-clip:padding-box}
+.vi-menu-body li.vi-menu{position:relative;float:none}
+.vi-menu-body .vi-menu-body{width:100%}
+.vi-menu-body .vi-menu-left,.vi-menu-body .vi-menu-right{top:-11px}
+.vi-menu-body>div,.vi-menu-body>ul{padding:0;border-left:#e5e5e5 1px solid}
+.vi-menu-body>div:first-child,.vi-menu-body>ul:first-child{border-left:none}
+.vi-menu-body li a{display:block;padding:3px 15px;outline:0 none;color:#000;vertical-align:middle;text-decoration:none;white-space:nowrap;white-space:nowrap;font-weight:400;font-size:14px;line-height:1.42857143;cursor:pointer}
+.vi-menu-body .active a,.vi-menu-body li a:hover{background-color:#2e6da4;background-image:linear-gradient(to bottom,#337ab7 0,#2e6da4 100%);background-repeat:repeat-x;color:#fff}
+.vi-menu-body .disabled a,.vi-menu-body .disabled a:hover{background-color:transparent;background-image:none;color:#777;text-decoration:none;cursor:not-allowed;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+.vi-menu-left{top:0;right:100%;left:auto;margin:0 2px 0 0}
+.vi-menu-right{top:0;left:100%;margin:0 0 0 2px}
+.vi-menu-top{top:auto;bottom:100%;margin:0 0 2px 0}
+.vi-menu-bottom{top:100%;left:0;margin:2px 0 0 0}
+/* Glyphicons Halflings http://glyphicons.com/ */
+@font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
+a.halflings,a.halflings:hover{text-decoration:none}
+.halflings{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.halflings-asterisk:before{content:"\2a"}
+.halflings-plus:before{content:"\2b"}
+.halflings-eur:before,.halflings-euro:before{content:"\20ac"}
+.halflings-minus:before{content:"\2212"}
+.halflings-cloud:before{content:"\2601"}
+.halflings-envelope:before{content:"\2709"}
+.halflings-pencil:before{content:"\270f"}
+.halflings-glass:before{content:"\e001"}
+.halflings-music:before{content:"\e002"}
+.halflings-search:before{content:"\e003"}
+.halflings-heart:before{content:"\e005"}
+.halflings-star:before{content:"\e006"}
+.halflings-star-empty:before{content:"\e007"}
+.halflings-user:before{content:"\e008"}
+.halflings-film:before{content:"\e009"}
+.halflings-th-large:before{content:"\e010"}
+.halflings-th:before{content:"\e011"}
+.halflings-th-list:before{content:"\e012"}
+.halflings-ok:before{content:"\e013"}
+.halflings-remove:before{content:"\e014"}
+.halflings-zoom-in:before{content:"\e015"}
+.halflings-zoom-out:before{content:"\e016"}
+.halflings-off:before{content:"\e017"}
+.halflings-signal:before{content:"\e018"}
+.halflings-cog:before{content:"\e019"}
+.halflings-trash:before{content:"\e020"}
+.halflings-home:before{content:"\e021"}
+.halflings-file:before{content:"\e022"}
+.halflings-time:before{content:"\e023"}
+.halflings-road:before{content:"\e024"}
+.halflings-download-alt:before{content:"\e025"}
+.halflings-download:before{content:"\e026"}
+.halflings-upload:before{content:"\e027"}
+.halflings-inbox:before{content:"\e028"}
+.halflings-play-circle:before{content:"\e029"}
+.halflings-repeat:before{content:"\e030"}
+.halflings-refresh:before{content:"\e031"}
+.halflings-list-alt:before{content:"\e032"}
+.halflings-lock:before{content:"\e033"}
+.halflings-flag:before{content:"\e034"}
+.halflings-headphones:before{content:"\e035"}
+.halflings-volume-off:before{content:"\e036"}
+.halflings-volume-down:before{content:"\e037"}
+.halflings-volume-up:before{content:"\e038"}
+.halflings-qrcode:before{content:"\e039"}
+.halflings-barcode:before{content:"\e040"}
+.halflings-tag:before{content:"\e041"}
+.halflings-tags:before{content:"\e042"}
+.halflings-book:before{content:"\e043"}
+.halflings-bookmark:before{content:"\e044"}
+.halflings-print:before{content:"\e045"}
+.halflings-camera:before{content:"\e046"}
+.halflings-font:before{content:"\e047"}
+.halflings-bold:before{content:"\e048"}
+.halflings-italic:before{content:"\e049"}
+.halflings-text-height:before{content:"\e050"}
+.halflings-text-width:before{content:"\e051"}
+.halflings-align-left:before{content:"\e052"}
+.halflings-align-center:before{content:"\e053"}
+.halflings-align-right:before{content:"\e054"}
+.halflings-align-justify:before{content:"\e055"}
+.halflings-list:before{content:"\e056"}
+.halflings-indent-left:before{content:"\e057"}
+.halflings-indent-right:before{content:"\e058"}
+.halflings-facetime-video:before{content:"\e059"}
+.halflings-picture:before{content:"\e060"}
+.halflings-map-marker:before{content:"\e062"}
+.halflings-adjust:before{content:"\e063"}
+.halflings-tint:before{content:"\e064"}
+.halflings-edit:before{content:"\e065"}
+.halflings-share:before{content:"\e066"}
+.halflings-check:before{content:"\e067"}
+.halflings-move:before{content:"\e068"}
+.halflings-step-backward:before{content:"\e069"}
+.halflings-fast-backward:before{content:"\e070"}
+.halflings-backward:before{content:"\e071"}
+.halflings-play:before{content:"\e072"}
+.halflings-pause:before{content:"\e073"}
+.halflings-stop:before{content:"\e074"}
+.halflings-forward:before{content:"\e075"}
+.halflings-fast-forward:before{content:"\e076"}
+.halflings-step-forward:before{content:"\e077"}
+.halflings-eject:before{content:"\e078"}
+.halflings-chevron-left:before{content:"\e079"}
+.halflings-chevron-right:before{content:"\e080"}
+.halflings-plus-sign:before{content:"\e081"}
+.halflings-minus-sign:before{content:"\e082"}
+.halflings-remove-sign:before{content:"\e083"}
+.halflings-ok-sign:before{content:"\e084"}
+.halflings-question-sign:before{content:"\e085"}
+.halflings-info-sign:before{content:"\e086"}
+.halflings-screenshot:before{content:"\e087"}
+.halflings-remove-circle:before{content:"\e088"}
+.halflings-ok-circle:before{content:"\e089"}
+.halflings-ban-circle:before{content:"\e090"}
+.halflings-arrow-left:before{content:"\e091"}
+.halflings-arrow-right:before{content:"\e092"}
+.halflings-arrow-up:before{content:"\e093"}
+.halflings-arrow-down:before{content:"\e094"}
+.halflings-share-alt:before{content:"\e095"}
+.halflings-resize-full:before{content:"\e096"}
+.halflings-resize-small:before{content:"\e097"}
+.halflings-exclamation-sign:before{content:"\e101"}
+.halflings-gift:before{content:"\e102"}
+.halflings-leaf:before{content:"\e103"}
+.halflings-fire:before{content:"\e104"}
+.halflings-eye-open:before{content:"\e105"}
+.halflings-eye-close:before{content:"\e106"}
+.halflings-warning-sign:before{content:"\e107"}
+.halflings-plane:before{content:"\e108"}
+.halflings-calendar:before{content:"\e109"}
+.halflings-random:before{content:"\e110"}
+.halflings-comment:before{content:"\e111"}
+.halflings-magnet:before{content:"\e112"}
+.halflings-chevron-up:before{content:"\e113"}
+.halflings-chevron-down:before{content:"\e114"}
+.halflings-retweet:before{content:"\e115"}
+.halflings-shopping-cart:before{content:"\e116"}
+.halflings-folder-close:before{content:"\e117"}
+.halflings-folder-open:before{content:"\e118"}
+.halflings-resize-vertical:before{content:"\e119"}
+.halflings-resize-horizontal:before{content:"\e120"}
+.halflings-hdd:before{content:"\e121"}
+.halflings-bullhorn:before{content:"\e122"}
+.halflings-bell:before{content:"\e123"}
+.halflings-certificate:before{content:"\e124"}
+.halflings-thumbs-up:before{content:"\e125"}
+.halflings-thumbs-down:before{content:"\e126"}
+.halflings-hand-right:before{content:"\e127"}
+.halflings-hand-left:before{content:"\e128"}
+.halflings-hand-up:before{content:"\e129"}
+.halflings-hand-down:before{content:"\e130"}
+.halflings-circle-arrow-right:before{content:"\e131"}
+.halflings-circle-arrow-left:before{content:"\e132"}
+.halflings-circle-arrow-up:before{content:"\e133"}
+.halflings-circle-arrow-down:before{content:"\e134"}
+.halflings-globe:before{content:"\e135"}
+.halflings-wrench:before{content:"\e136"}
+.halflings-tasks:before{content:"\e137"}
+.halflings-filter:before{content:"\e138"}
+.halflings-briefcase:before{content:"\e139"}
+.halflings-fullscreen:before{content:"\e140"}
+.halflings-dashboard:before{content:"\e141"}
+.halflings-paperclip:before{content:"\e142"}
+.halflings-heart-empty:before{content:"\e143"}
+.halflings-link:before{content:"\e144"}
+.halflings-phone:before{content:"\e145"}
+.halflings-pushpin:before{content:"\e146"}
+.halflings-usd:before{content:"\e148"}
+.halflings-gbp:before{content:"\e149"}
+.halflings-sort:before{content:"\e150"}
+.halflings-sort-by-alphabet:before{content:"\e151"}
+.halflings-sort-by-alphabet-alt:before{content:"\e152"}
+.halflings-sort-by-order:before{content:"\e153"}
+.halflings-sort-by-order-alt:before{content:"\e154"}
+.halflings-sort-by-attributes:before{content:"\e155"}
+.halflings-sort-by-attributes-alt:before{content:"\e156"}
+.halflings-unchecked:before{content:"\e157"}
+.halflings-expand:before{content:"\e158"}
+.halflings-collapse-down:before{content:"\e159"}
+.halflings-collapse-up:before{content:"\e160"}
+.halflings-log-in:before{content:"\e161"}
+.halflings-flash:before{content:"\e162"}
+.halflings-log-out:before{content:"\e163"}
+.halflings-new-window:before{content:"\e164"}
+.halflings-record:before{content:"\e165"}
+.halflings-save:before{content:"\e166"}
+.halflings-open:before{content:"\e167"}
+.halflings-saved:before{content:"\e168"}
+.halflings-import:before{content:"\e169"}
+.halflings-export:before{content:"\e170"}
+.halflings-send:before{content:"\e171"}
+.halflings-floppy-disk:before{content:"\e172"}
+.halflings-floppy-saved:before{content:"\e173"}
+.halflings-floppy-remove:before{content:"\e174"}
+.halflings-floppy-save:before{content:"\e175"}
+.halflings-floppy-open:before{content:"\e176"}
+.halflings-credit-card:before{content:"\e177"}
+.halflings-transfer:before{content:"\e178"}
+.halflings-cutlery:before{content:"\e179"}
+.halflings-header:before{content:"\e180"}
+.halflings-compressed:before{content:"\e181"}
+.halflings-earphone:before{content:"\e182"}
+.halflings-phone-alt:before{content:"\e183"}
+.halflings-tower:before{content:"\e184"}
+.halflings-stats:before{content:"\e185"}
+.halflings-sd-video:before{content:"\e186"}
+.halflings-hd-video:before{content:"\e187"}
+.halflings-subtitles:before{content:"\e188"}
+.halflings-sound-stereo:before{content:"\e189"}
+.halflings-sound-dolby:before{content:"\e190"}
+.halflings-sound-5-1:before{content:"\e191"}
+.halflings-sound-6-1:before{content:"\e192"}
+.halflings-sound-7-1:before{content:"\e193"}
+.halflings-copyright-mark:before{content:"\e194"}
+.halflings-registration-mark:before{content:"\e195"}
+.halflings-cloud-download:before{content:"\e197"}
+.halflings-cloud-upload:before{content:"\e198"}
+.halflings-tree-conifer:before{content:"\e199"}
+.halflings-tree-deciduous:before{content:"\e200"}
+.halflings-cd:before{content:"\e201"}
+.halflings-save-file:before{content:"\e202"}
+.halflings-open-file:before{content:"\e203"}
+.halflings-level-up:before{content:"\e204"}
+.halflings-copy:before{content:"\e205"}
+.halflings-paste:before{content:"\e206"}
+.halflings-alert:before{content:"\e209"}
+.halflings-equalizer:before{content:"\e210"}
+.halflings-king:before{content:"\e211"}
+.halflings-queen:before{content:"\e212"}
+.halflings-pawn:before{content:"\e213"}
+.halflings-bishop:before{content:"\e214"}
+.halflings-knight:before{content:"\e215"}
+.halflings-baby-formula:before{content:"\e216"}
+.halflings-tent:before{content:"\26fa"}
+.halflings-blackboard:before{content:"\e218"}
+.halflings-bed:before{content:"\e219"}
+.halflings-apple:before{content:"\f8ff"}
+.halflings-erase:before{content:"\e221"}
+.halflings-hourglass:before{content:"\231b"}
+.halflings-lamp:before{content:"\e223"}
+.halflings-duplicate:before{content:"\e224"}
+.halflings-piggy-bank:before{content:"\e225"}
+.halflings-scissors:before{content:"\e226"}
+.halflings-bitcoin:before{content:"\e227"}
+.halflings-btc:before{content:"\e227"}
+.halflings-xbt:before{content:"\e227"}
+.halflings-yen:before{content:"\00a5"}
+.halflings-jpy:before{content:"\00a5"}
+.halflings-ruble:before{content:"\20bd"}
+.halflings-rub:before{content:"\20bd"}
+.halflings-scale:before{content:"\e230"}
+.halflings-ice-lolly:before{content:"\e231"}
+.halflings-ice-lolly-tasted:before{content:"\e232"}
+.halflings-education:before{content:"\e233"}
+.halflings-option-horizontal:before{content:"\e234"}
+.halflings-option-vertical:before{content:"\e235"}
+.halflings-menu-hamburger:before{content:"\e236"}
+.halflings-modal-window:before{content:"\e237"}
+.halflings-oil:before{content:"\e238"}
+.halflings-grain:before{content:"\e239"}
+.halflings-sunglasses:before{content:"\e240"}
+.halflings-text-size:before{content:"\e241"}
+.halflings-text-color:before{content:"\e242"}
+.halflings-text-background:before{content:"\e243"}
+.halflings-object-align-top:before{content:"\e244"}
+.halflings-object-align-bottom:before{content:"\e245"}
+.halflings-object-align-horizontal:before{content:"\e246"}
+.halflings-object-align-left:before{content:"\e247"}
+.halflings-object-align-vertical:before{content:"\e248"}
+.halflings-object-align-right:before{content:"\e249"}
+.halflings-triangle-right:before{content:"\e250"}
+.halflings-triangle-left:before{content:"\e251"}
+.halflings-triangle-bottom:before{content:"\e252"}
+.halflings-triangle-top:before{content:"\e253"}
+.halflings-console:before{content:"\e254"}
+.halflings-superscript:before{content:"\e255"}
+.halflings-subscript:before{content:"\e256"}
+.halflings-menu-left:before{content:"\e257"}
+.halflings-menu-right:before{content:"\e258"}
+.halflings-menu-down:before{content:"\e259"}
+.halflings-menu-up:before{content:"\e260"}

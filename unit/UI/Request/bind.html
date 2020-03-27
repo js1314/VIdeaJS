@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.UI.Ajax Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+	</head>
+	<body>
+		<select><option>1</option><option>2</option><option>3</option></select>
+		<a vi-url="response.json" class="vi-ui-Request" vi-onBefore="@onBefore" vi-onShow="@onShow" vi-onConfirm="<select><option>1</option><option>2</option><option>3</option></select>" vi-onSuccess="@onSuccess">
+			Request Response
+		</a>
+		<script type="text/javascript">
+			var l = 100;
+			while (l--) {
+				document.write("<br />");
+			}
+			function onBefore() {
+//				console.log("before");
+			}
+			function onSuccess(data) {
+				
+			}
+			function onShow() {
+			}
+		</script>
+	</body>
+</html>

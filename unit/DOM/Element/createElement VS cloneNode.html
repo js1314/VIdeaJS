@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>createElement VS cloneNode</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.unit.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var tags = {};
+			function createElement(tagName) {
+				tags[tagName] = tags[tagName] || document.createElement(tagName);
+				return tags[tagName].cloneNode(true);
+			}
+			vi.unit.vs(
+			"createElement()", function () {
+				document.createElement("div");
+				document.createElement("span");
+			},
+			"cloneNode()", function () {
+				window.createElement("div");
+				document.createElement("span");
+			});
+		</script>
+	</body>
+</html>

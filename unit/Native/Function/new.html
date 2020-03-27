@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Function new Test</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function test(a) {
+				return test1(a);
+			}
+			function test1(a) {
+				a = function() {};
+				a.constructor = {};
+				return a;
+			}
+			alert(new test());
+		</script>
+	</body>
+</html>

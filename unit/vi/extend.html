@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.extend Test</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../js/core/vi.unit.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/vi.unit.css" />
+	</head>
+	<body>
+		<div>Welcome vi.extend Unit, This is default content.</div>
+		<script type="text/javascript">
+			var a = {a: {x: 1, y: 2}};
+			var b = {a: {x: 3, y: 4}};
+			var c = vi.extend(a, b);
+			b.a.x = 5;
+			b.a.y = 6;
+			console.log("link:");
+			console.log("- target: ", a.a);
+			console.log("- destination: ", b.a);
+			console.log("- result: ", c.a);
+
+			console.log(" ");
+
+			console.log("unlink:");
+			var a = {a: {x: 1, y: 2}};
+			var b = {a: {x: 3, y: 4}};
+			var c = vi.extend(a, b, true);
+			b.a.x = 5;
+			b.a.y = 6;
+			console.log("- target: ", a.a);
+			console.log("- destination: ", b.a);
+			console.log("- result: ", c.a);
+		</script>
+	</body>
+</html>

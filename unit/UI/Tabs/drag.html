@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>vi.UI.Tabs Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+    </head>
+    <body>
+		<div style='float:left;margin: 10px;position: relative; padding: 20px;' id="container">
+			<div class="vi-ui-tabs" vi-draggable="true" vi-container="#container" vi-tabs=":{'Title 4':{content:'Body 4',onDrag:'@onDrag'}}" style="position: relative;margin: 200px; top: 10px; left: 10px; ">
+				<div class="vi-tabs vi-tabs-tab">
+					<div class="vi-tabs-header">
+						<div class="vi-tabs-title">Title 1</div>
+						<div class="vi-divider vi-tabs-divider"></div>
+					</div>
+					<div class="vi-tabs-body">
+						Body 1
+					</div>
+				</div>
+				<div class="vi-tabs vi-tabs-tab vi-active">
+					<div class="vi-tabs-header">
+						<div class="vi-tabs-title">Title 2</div>
+						<div class="vi-divider vi-tabs-divider"></div>
+					</div>
+					<div class="vi-tabs-body">
+						Body 2
+					</div>
+				</div>
+				<div class="vi-tabs vi-tabs-tab">
+					<div class="vi-tabs-header">
+						<div class="vi-tabs-title">Title 3</div>
+						<div class="vi-divider vi-tabs-divider"></div>
+					</div>
+					<div class="vi-tabs-body">
+						Body 3
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function onDrag() {
+				console.log("drag");
+			}
+		</script>
+    </body>
+</html>

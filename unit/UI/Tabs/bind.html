@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>vi.UI.Tabs Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+    </head>
+    <body>
+		<div style='margin: 10px;position: relative; padding: 20px;'>
+			<div class="vi-ui-tabs" vi-tabs=":{Title4:{content:'Body 4'}}" style="display: flex;position: relative; margin: 200px; top: 10px; left: 10px; ">
+				<div class="vi-tabs-tab" vi-active="true" vi-title='Title1' vi-close="true">
+					Body 1
+				</div>
+				<div class="vi-tabs-tab" vi-title='Title2'>
+					Body 2
+				</div>
+				<div class="vi-tabs-tab" vi-title='Title3'>
+					Body 3
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function onDrag() {
+				console.log("drag");
+			}
+			for (var i = 0; i < 100; i++) {
+				document.write("<br />");
+			}
+			window.scrollTo(0, 100);
+		</script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.error Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+	</head>
+	<body>
+		<input type="button" id="test" value="测试" />
+		<script type="text/javascript">
+			var a = query("#test").addEvent("click", function (e) {
+				console.log(e);
+				console.log(this);
+			});
+		</script>
+	</body>
+</html>

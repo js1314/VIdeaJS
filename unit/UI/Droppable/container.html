@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.UI.draggable Container Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+	</head>
+	<body>
+		x：<span id="x">unknown</span><br />
+		y：<span id="y">unknown</span><br />
+		inSide：<span id="inSide">unknown</span><br />
+		inX：<span id="inX">unknown</span><br />
+		inY：<span id="inY">unknown</span><br />
+		onLeft：<span id="onLeft">unknown</span><br />
+		onRight：<span id="onRight">unknown</span><br />
+		onTop：<span id="onTop">unknown</span><br />
+		onBottom：<span id="onBottom">unknown</span><br />
+		
+		<div class="container" style="
+			 float: left;
+			 /*overflow: scroll;*/
+			 width: 500px; height: 400px;  
+			 margin-right: 10px;
+			 padding: 110px 90px 70px 50px; 
+			 border: red 5px solid; border-left-width: 5px; border-top-width: 10px; border-right-width: 15px; border-bottom-width: 20px;">
+			<div>Container 1</div>
+		</div>
+		
+		<div class="container" style="
+			 float: left;
+			 /*overflow: scroll;*/
+			 width: 500px; height: 400px;  
+			 padding: 110px 90px 70px 50px; 
+			 border: red 5px solid; border-left-width: 5px; border-top-width: 10px; border-right-width: 15px; border-bottom-width: 20px;">
+			<div>Container 2</div>
+			<div class="vi-ui-draggable" vi-container=".container" vi-handler=".handler" vi-trailer="true" vi-wrapper="window" style="
+				 /*position: absolute ;*/
+				 float: left;
+				 width: 150px; height: 100px;
+				 margin: 0px 10px 10px 0px;
+				 border: black 3px solid; border-left-width: 3px; border-top-width: 8px; border-right-width: 13px; border-bottom-width: 18px;">
+				<div class="handler" style="
+					 width: 148px; height: 28px;
+					 border: blue 1px solid;">
+					Handler 1
+				</div>
+				draggable 1
+			</div>
+			<div class="vi-ui-draggable" vi-container=".container" vi-handler=".handler" vi-trailer="true" vi-wrapper="window" style="
+				 /*position: absolute ;*/
+				 float: left;
+				 width: 150px; height: 100px;
+				 margin: 0px 10px 10px 0px;
+				 border: black 3px solid; border-left-width: 3px; border-top-width: 8px; border-right-width: 13px; border-bottom-width: 18px;">
+				<div class="handler" style="
+					 width: 148px; height: 28px;
+					 border: blue 1px solid;">
+					Handler 2
+				</div>
+				draggable 2
+			</div>
+			<div class="vi-ui-draggable" vi-container=".container" vi-handler=".handler" vi-trailer="true" vi-wrapper="window" style="
+				 /*position: absolute ;*/
+				 float: left;
+				 width: 150px; height: 100px;
+				 margin: 0px 10px 10px 0px;
+				 border: black 3px solid; border-left-width: 3px; border-top-width: 8px; border-right-width: 13px; border-bottom-width: 18px;">
+				<div class="handler" style="
+					 width: 148px; height: 28px;
+					 border: blue 1px solid;">
+					Handler 3
+				</div>
+				draggable 3
+			</div>
+			<div class="vi-ui-draggable" vi-container=".container" vi-handler=".handler" vi-trailer="true" vi-wrapper="window" style="
+				 /*position: absolute ;*/
+				 float: left;
+				 width: 150px; height: 100px;
+				 margin: 0px 10px 10px 0px;
+				 border: black 3px solid; border-left-width: 3px; border-top-width: 8px; border-right-width: 13px; border-bottom-width: 18px;">
+				<div class="handler" style="
+					 width: 148px; height: 28px;
+					 border: blue 1px solid;">
+					Handler 4
+				</div>
+				draggable 4
+			</div>
+			<div class="vi-ui-draggable" vi-container=".container" vi-handler=".handler" vi-trailer="true" vi-wrapper="window" style="
+				 /*position: absolute ;*/
+				 float: left;
+				 width: 150px; height: 100px;
+				 margin: 0px 10px 10px 0px;
+				 border: black 3px solid; border-left-width: 3px; border-top-width: 8px; border-right-width: 13px; border-bottom-width: 18px;">
+				<div class="handler" style="
+					 width: 148px; height: 28px;
+					 border: blue 1px solid;">
+					Handler 5
+				</div>
+				draggable 5
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var l = 100;
+			while (l--) {
+				document.write("<br />");
+			}
+		</script>
+	</body>
+</html>

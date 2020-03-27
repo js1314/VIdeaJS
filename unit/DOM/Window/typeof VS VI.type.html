@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>typeofVstype Test</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.unit.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			var caseTypeof = vi.unit.report("typeof()", function () {
+//				return typeof {a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10,k:11,l:12,m:13,n:14,o:15,p:16,q:17,r:18,s:19,t:20,u:21,v:22,w:23,x:24,y:25,z:26} === "string";
+//			});
+			var casevitype = vi.unit.report("vi.type()", function () {
+				return String.type({a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9, j: 10, k: 11, l: 12, m: 13, n: 14, o: 15, p: 16, q: 17, r: 18, s: 19, t: 20, u: 21, v: 22, w: 23, x: 24, y: 25, z: 26});
+			});
+			var caseFeature = vi.unit.report(".features", function () {
+				return !!{a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9, j: 10, k: 11, l: 12, m: 13, n: 14, o: 15, p: 16, q: 17, r: 18, s: 19, t: 20, u: 21, v: 22, w: 23, x: 24, y: 25, z: 26}.trim;
+			});
+//			vi.unit.vs(caseTypeof, casevitype);
+//			vi.unit.vs(caseTypeof, caseFeature);
+			vi.unit.vs(casevitype, caseFeature);
+		</script>
+	</body>
+</html>

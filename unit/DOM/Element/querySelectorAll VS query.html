@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>querySelectorAll VS query</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.unit.js"></script>
+	</head>
+	<body>
+		<div id="div1" class="div">
+			<span id="span1"></span>
+		</div>
+		<div id="div2" class="div">
+			<span id="span2"></span>
+		</div>
+		<div id="div3" class="div">
+			<span id="span3"></span>
+		</div>
+		<script type="text/javascript">
+			vi.Unit.vs("querySelectorAll()", function () {
+				document.querySelectorAll("#span, .div span");
+			}, "query()", function () {
+				query("#span, .div span");
+			});
+		</script>
+	</body>
+</html>
+
+

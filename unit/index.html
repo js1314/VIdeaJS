@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vi.unit</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../js/core/vi.js"></script>
+        <script type="text/javascript" src="../js/core/vi.unit.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/vi.css" />
+        <link rel="stylesheet" type="text/css" href="../css/vi.unit.css" />
+    </head>
+    <body>
+        <div id="left">
+        </div>
+        <div id="right">
+            <iframe src="welcome.html" id="welcome"></iframe>
+        </div>
+        <script type="text/javascript">
+			Ajax.get("menu.php", function (html) {
+				query("#welcome").setStyle("height", query("#left").html(html).getHeight());
+				query("#left a").addEvent("click", function () {
+					query("#left a").removeClass("active");
+					this.addClass("active");
+					var href = this.getAttr("href");
+					query("#welcome").setAttr('src', href);
+					location.hash = "#" + href;
+					return false;
+				});
+			});
+        </script>
+    </body>
+</html>

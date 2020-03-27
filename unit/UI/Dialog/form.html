@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vi.UI.Dialog Form Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+	</head>
+	<body>
+		<a href="#" id="show">Show Dialog form</a>
+		<div class="vi-ui-dialog" vi-handler="#show" vi-title="Dialog" vi-onShow="@onShow" vi-onHide="@onHide">
+			<form>
+				<div class="vi-row">
+					<label class="vi-col-1 vi-label">input1</label>
+					<div class="vi-col-2">
+						<input type="text" class="vi-input" name="Dialog" value="Dialog" />
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript">
+			function onShow() {
+			}
+		</script>
+	</body>
+</html>

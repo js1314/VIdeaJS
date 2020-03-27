@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>vi.UI.Dialog Unit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../../../js/core/vi.js"></script>
+		<script type="text/javascript" src="../../../js/core/vi.ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/vi.ui.css" />
+    </head>
+    <body>
+		<a href="#" id="show">Show Dialog a</a>
+		<div class="vi-ui-dialog vi-dialog" vi-handler="#show" vi-title="Dialog" vi-onShowBefore="@onShow" vi-onHide="@onHide">
+			Dialog
+		</div>
+		<div style="height: 2000px"></div>
+		<script type="text/javascript">
+			function onShow() {
+				this.getFooterBar().addButton("隐藏", "click", this.hide.bind(this));
+			}
+		</script>
+    </body>
+</html>
